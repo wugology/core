@@ -2,6 +2,7 @@ app.Utterance = Backbone.Model.extend({
 
   defaults: function () {
       return {
+          id: '',
           tags: [
           ]
       }

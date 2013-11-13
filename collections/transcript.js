@@ -1,6 +1,8 @@
 app.Transcript = Backbone.Collection.extend({
 
-  initialize: function(){
+  initialize: function(options){
+    this.url = options.url;
+    this.deferred = this.fetch();
   },
 
   url: function(){ return this.url },
