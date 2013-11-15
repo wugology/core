@@ -11,7 +11,6 @@ app.Utterance = Backbone.Model.extend({
   initialize: function () {
       _.bindAll(this, 'tag', 'untag');
       var self = this;
-      this.on('change:tags', this.notify, this)
   },
   
   tag: function (tags) {
