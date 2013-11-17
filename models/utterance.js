@@ -1,16 +1,25 @@
+Backbone.Model.prototype.match = function(test) {
+}
+
 app.Utterance = Backbone.Model.extend({
 
   defaults: function () {
       return {
           id: '',
+          selected: false,
           tags: [
           ]
       }
   },
-  
+
   initialize: function () {
-      _.bindAll(this, 'tag', 'untag');
-      var self = this;
+      _.bindAll(this, 'tag', 'untag', 'match');
+  },
+  
+  match: function(test){
+    return _.any(this.attributes, function(attr) {
+        return _.isRegExp(test) ? test.test(attr) : attr == test
+    })
   },
   
   tag: function (tags) {

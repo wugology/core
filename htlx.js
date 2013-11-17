@@ -1,19 +1,27 @@
 app = {};
 
+Backbone.Model.prototype.match = function(test) {
+}
+
 app.Utterance = Backbone.Model.extend({
 
   defaults: function () {
       return {
           id: '',
+          selected: false,
           tags: [
           ]
       }
   },
-  
+
   initialize: function () {
-      _.bindAll(this, 'tag', 'untag');
-      var self = this;
-      this.on('change:tags', this.notify, this)
+      _.bindAll(this, 'tag', 'untag', 'match');
+  },
+  
+  match: function(test){
+    return _.any(this.attributes, function(attr) {
+        return _.isRegExp(test) ? test.test(attr) : attr == test
+    })
   },
   
   tag: function (tags) {
@@ -23,7 +31,6 @@ app.Utterance = Backbone.Model.extend({
   },
 
   untag: function (nixTags) {
-      console.log('untagging…');
       var tags = _.without(this.get('tags'), nixTags);
       this.set('tags', tags);
       this.trigger('change:tags');
@@ -79,6 +86,12 @@ app.Transcript = Backbone.Collection.extend({
   initialize: function(options){
     this.url = options.url;
     this.deferred = this.fetch();
+  },
+
+  search: function(test){
+    return this.filter(function(model) {
+      return model.match(test)
+    })
   },
 
   url: function(){ return this.url },

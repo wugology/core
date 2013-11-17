@@ -5,6 +5,12 @@ app.Transcript = Backbone.Collection.extend({
     this.deferred = this.fetch();
   },
 
+  search: function(test){
+    return this.filter(function(model) {
+      return model.match(test)
+    })
+  },
+
   url: function(){ return this.url },
 
   model: app.Utterance,
