@@ -1,0 +1,117 @@
+
+# HTML Linguistics Working Group 
+
+## Mission Statement
+
+We aim to build tools, documentation, and example applications to help the field of linguistics reap more benefits from digitization.
+We have chosen the web platform (HTML/CSS/Javascript) as a suitable platform for this work.
+- Maybe this isn't the type of thing to put in a MS, but let's think more specifically about the benefits of digitization. What, specifically, are we providing with this approach? Some thoughts:
+    - SIMPLICITY / ACCESSIBILITY - HTML, CSS, and Javascript are EASY, and the data structure pretty straightforward
+    - A single tool for everything - Right now, you've got ELAN, FLEx, LexiquePro, and a bajillion other things. This project has the eventual goal of handling essentially ALL THE THINGS. But by focusing on the most important part first - the data structure and technologies - we've created a way to expand our offerings gradually.
+    - These technologies ain't goin' anywhere, and they're super powerful
+    - Ability to store data locally while using a consistent standard, without having to implement that standard yourself (you just input the data into the nice little fields we provide)
+    - Pat: What else do you see as the specific benefits?
+Yeah, we definitely need some sort of initial introduction to & justification for the whole project. 
+I was trying to get at an idea like this with those few pages on htmllingusitics.com (001.html et seq): the plan was something like: Show people that the stuff they already know how to 
+use and create (‘interlinear’ glossing) is in fact a well-defined data structure already, and that many unforeseen benefits fall out of having workflows that encode those datastructures in 
+a simple, meaningful, interpretable way. 
+I think we can also make reference to Bird & Simons (2003), which is full of promise but whose promise has never been fulfilled (in my opinion, because people went down a too-complex
+path of trying to use XML for everything).
+
+For reference, here are their 7 points:
+
+Seven Problems for Portability
+	1. Content - terminology, accountability, richness.
+	1. Format - openness, documentation, machine-readable, human-readable
+	1. Discovery - existence, relevance
+	1. Access - complete, unimpeded, universal
+	1. Citation - credit, provenance, persistence, immutability, components
+	1. Preservation - long-term, complete
+	1. Rights -documentation, research
+
+I think we can make an argument that we can empower linguists and communities to meet all of these requirements easily (modulo  privacy constraints, etc).
+
+But it would be good to have some (Marianne’s least favorite term) case studies about how the htlx approach can check off these problems for existing documentation “situations”.
+
+Come to think of it, a typology of “documentary situations” would be a good thing, too: it constantly occurs to me how you & I are very much in the same boat as far as Kashaya and
+Chitimacha are concerned, but in pretty distinct boats for Mixtec and (eventually) Ekegusii. I have often mused about hte possibility of building some sort of 'Documentation Workflow
+Manual' which would help documentary groups situate the status of their projects within a typology, and then make informed decisions about  what the low-hanging fruit are, and how 
+to get there.
+
+So I've moved into a higher level of goals here, I guess, but I feel like the challenge is going to be finding a way to 1) explain what open technology *is* and then 2) explain what it can do
+for linguistics.
+
+## Deliverables
+
+The working group will work towards the following deliverables:    
+
+* HTML: A proposal for marking up linguistic data in HTML
+* CSS: Complementary CSS stylesheets which render that markup in standard linguistic notation
+- e.g. We suggest a standard for formatting interlinear glosses in HTML, and maybe even provide the CSS file and an example text
+* Javascript/Web applications: We envisage a series of small, interoperable web-based interfaces aimed
+at solving very specific documentary problems, rather than a highly general “kitchen-sink” style application.
+- I like this. You don't have to touch anything you don't need, but if you want it, it's there. For example, I wouldn't want audiovisual alignment for my archival work.
+
+We take inspiration from the Agile approach to software development, which focuses on quick iteration and exploration of interfaces. 
+
+## Decision Points
+
+We will face some key architectural decisions early on about the basis for our work. These include:
+
+* defining a canonical representation of documentary structure (likely either in HTML or JSON)
+- Since this is more-or-less straightforward, I suggest this be our first task, and we schedule some time (with other stakeholders) to draft some
+- We'll also want to consider next steps from this - do we then shop it around to other tech-informed linguists (e.g. Jeff Good, Nick Thieberger) for their input? This gets us more buy-in right from the start.
+* determining how to handle persistence. Browser based, file based, a backend database of some kind, or some combination of these?
+- Let's also schedule a separate time for this. I have some ideas.
+PROMOTION AND EDUCATION
+
+We aim to “raise the ship” in terms of the level of technical empowerment among linguists. It is a premise of this working group
+that  a little understanding goes a long way, in terms of the return on  investment of effort in familiarization with web technologies. 
+
+## Policy on Openness of Tools, Not Content 
+- Brilliantly put
+
+Our work will be released under open source licenses. We encourage derivative works based on the standards,
+including commercial applications. Note that the licensing status of the formats and processes defined by the working group are completely distinct from the licensing of the *content* produced by linguists and speakers. Only 
+linguists and speakers are capable of determining appropriate ethical constraints on archival material. 
+
+Our  goal, rather, is simply to enable linguists to collaborate more effectively, while remaining independent of commitment to any 
+particular server infrastructure or curatorial regime. As such, we do not intend to enter into recommendation or even discussion of 
+the ethical status of any documentary output. Those decisions are properly addressed by linguists and the communities they work
+with, not by a team such as ours, which is focused on technical solutions to documentary problems.
+
+We also prioritize the human-legibility of the documentary formats we develop. [We should keep this in mind when writing code too. For example, we should avoid abbreviations in the code unless they're something superobvious like 'lang' - dwh] While the markup of a detailed HTML file may not be truly “readable,”
+the rendered version will be, and we insist on maintaining as a ideal a clarity of mapping between markup and rendered content. Many existing software
+formats (ELAN’s EAF format,  Flex’s @@@, etc.) place no such priority on the design of their formats. Thus those formats are condemned [too much? :) --pjh ]
+to being legible only to technical experts and not the majority of linguists. It is our belief that in order to “raise the ship,” —i.e., to increase the general amount of technical empowerment among working linguists and speech communities — that data formats should become more and not less transparent.
+
+## References and Previous Work
+
+While we feel that the web platform is relatively unexplored as a direct medium for linguistic documentation, we are keenly aware that 
+much previous work … blah blah … Bird & Simons, Himmelman, Haspelmath, etc. 
+
+## Near-term Goals
+
+The following two projects will be priority test-cases:
+    
+1. Multiple-document digitization projects on Hiligaynon and Chitimacha. 
+2. A small-scale multi-language comparative typology  project, consisting of a comparison of a single grammatical feature across 
+a broad array of languages. Each contributor will find appropriate examples from a language in which they have expertise, and digitize
+those (few) examples. The aggregate examples will be combined in a way that demonstrates the utility of the Working Group’s efforts
+for typological linguistic comparison.
+
+## Long-term Goals
+
+At a later date we make seek to submit our proposals to suitable standards organizations. (Perhaps W3C.org, microformats.org,
+or other similar web standards organizations.) 
+- YES. That would be fantastic. Wouldn't it be great if W3C endorsed a standardized format for structuring and representing interlinear glosses, etc.? So cool.
+
+----
+
+### Change log
+
+    Thu, 29 Aug 2013 21:06:36 GMT Convert to Markdown —Pat
+    Thu, 29 Aug 2013 00:54:40 GMT Expand "Policy section” —Pat
+    Thu, 19 Sep 2013 01:15 PDT Added feedback for Pat - Danny
+    Fri, 20 Sep 2013 00:54:16 GMT - Motivation  & general goals —Pat
+
