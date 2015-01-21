@@ -65,5 +65,6 @@ Action items for the meet-up:
 
 Homework:
 - Put anything htlx related that we have on our computers into the appropriate repository
+- Combine wugbot/complingftw and htlx projects/organizations?
 - Continue organizing GitHub according to our organizational principles
 - Continue adding documentation
