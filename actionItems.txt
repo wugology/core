@@ -68,6 +68,7 @@ Action items for the meet-up:
   - Versioning / checkin-checkout procedure
 - Decide data backup plan, for both client-side and server-side backup
 - Choose one tool to create, create it, implement it in the app, and make it live
+  - Aim for mobile/responsive design for everything
 
 Homework:
 - Put anything htlx related that we have on our computers into the appropriate repository
