@@ -65,6 +65,7 @@ Action items for the meet-up:
   - What data they have access to
   - Where there data is stored
   - Who else can view/edit their data
+  - Versioning / checkin-checkout procedure
 - Decide data backup plan, for both client-side and server-side backup
 - Choose one tool to create, create it, implement it in the app, and make it live
 
