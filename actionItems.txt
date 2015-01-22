@@ -20,14 +20,16 @@ Action items for the meet-up:
     - research: materials for the Research section of the website, as well as private area for ongoing research that team members might be doing/collaborating on
       - including a standard for publishing linguistic articles on the web ('htlx publication')
       - a standardized htlx linguistics stylesheet
+      - research grant applications and planning
     - tools: the various tools of the wugbot app, as standalone tools
+    - pedagogy: pedagogical 
   - What filetypes to use, filenaming system
 - Decide project workflow (e.g. sprints, when do we release updates, and what do we release, etc.)
 - Map out site structure
   - Proposed structure:
     1. app - the unified tool set for inputing, managing, and manipulating linguistic data
     2. tools - the individual tools that constitute the app, available as standalone modules, and organized in some way
-      - (at least) 3 types of tools:
+      - types of tools:
         1. data entry (preferably always integrated with data editing)
         2. data editing (preferably always integrated with data entry)
         3. data viewing / searching / sorting / filtering
@@ -38,9 +40,11 @@ Action items for the meet-up:
           - statistics
           - social network sharing
           - creating 'htlx publications' (publications using our standardized html article and data formats)
+        5. pedagogical tools & materials creation
     3. learning zone - where people can go to learn about web linguistics
     4. research - research outputs directly about web linguistics, or that use wugbot tools
       - htlx publishing interface (which doesn't have to be on our website)
+    5. pedagogical outputs
 - Create a home page and make it live
 - Decide initial JSON data structure (for the linguistic data only)
   - Be as expansive as possible, thinking of all the things we'd like to support in the future, but acknowledge that the structure will inevitably change
@@ -54,8 +58,8 @@ Action items for the meet-up:
     - Multiple analyses of the same data by different people (also linked vs. cloned)
 - Create data persistence plan, for both client-side and server-side storage
   - Also what data gets loaded when, and where
-- Implement client-side data persistence
-- Implement server-side data persistence
+- Implement client-side data persistence (& backup)
+- Implement server-side data persistence (& backup)
 - Implement user persistence
   - Who's working on the data
   - What data they have access to
