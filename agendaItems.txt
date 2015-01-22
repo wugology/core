@@ -8,4 +8,5 @@ Agenda items for discussion (NOT action items, per se) during meet-ups or to res
 - What license should we use?
 - What sample data should we use to work with? (Ekegusii, Mixtec, Hiligaynon, Chumash, ???)
 - Should Danny's web app prototype go in the prototypes repository?
+- What about applying for the NSF grant?
 - When should we meet next?
