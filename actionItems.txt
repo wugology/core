@@ -1,3 +1,7 @@
+
+Difference between wugbot and digitallinguistics is the difference between a live, ready-to-go, website, and a working area/repository
+- This means that we'll need to rethink which repositories are in which organizations
+
 Action items for the meet-up:
 - Decide where documentation lives
 - Do documentation (as we go, and then in a focused manner at the end):
