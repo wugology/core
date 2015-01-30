@@ -7,3 +7,12 @@ Meeting Notes:
     - Eventually include print/online versions for publishing journal articles
   - also a Wugbot style guide, that's very simple
 * when you want to get for realzies about a tool, you take it out of the sandbox and create a new repo for it
+* interactive landing activity - a demo, or a tutorial
+  - probably just a static demo with three sections:
+    1. data input
+    2. JSON visualizer
+    3. output vizualizer, with 3 diff. outputs (lexicon, interlinear gloss, revitalization page output)
+  - maybe a Learn More link that does the actual walkthrough
+* possible tutorials:
+  - digital linguistics and well-structured data
+  - how to use the app
