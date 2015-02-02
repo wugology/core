@@ -1,12 +1,7 @@
 Action items for the meet-up:
-- Do documentation (as we go, and then in a focused manner at the end):
-  - Meeting notes/structure? - Seems like this is better captured by other types of documentation
-    - Can we use the GitHub events feature? Does this tie into Facebook?
+- Do documentation (as we go, and then in a focused manner at the end)
+- Do social media!
   - Terms and abbreviations
-  - File structure, location of action items, agenda items, wish list, backlogs
-    - Feature requests / Wish lists / User stories: Things we haven't coded yet
-    - Backlog: Things we've already coded but that need changes, or need additional features to be finished
-    - [Line between these two is blurry]
   - Project, mission, goals
 - Get everybody setup on GitHub
 - Decide organization of GitHub and implement it
