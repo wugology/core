@@ -48,6 +48,9 @@ blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none; }
 
+h1 {
+    text-align: center; }
+
 input {
 	background-color: lightgray; }
 
